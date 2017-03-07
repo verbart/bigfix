@@ -1,0 +1,30 @@
+{
+  "name": "bigfix",
+  "version": "0.0.1",
+  "author": "Artem Verbat",
+  "scripts": {
+    "start": "NODE_ENV=development ./node_modules/.bin/gulp",
+    "build": "NODE_ENV=production ./node_modules/.bin/gulp build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "browser-sync": "^2.18.2",
+    "del": "^2.2.2",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-if": "^2.0.2",
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-stylus": "^2.6.0",
+    "gulp-tinypng-nokey": "^1.0.4",
+    "gulp-util": "^3.0.7",
+    "gulp.spritesmith": "^6.3.0",
+    "panini": "^1.3.1",
+    "vinyl-buffer": "^1.0.0",
+    "webpack": "^2.2.1"
+  }
+}

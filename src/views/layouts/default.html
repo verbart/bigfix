@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script defer src="js/bundle.js"></script>
+
+  <title>Title</title>
+</head>
+<body>
+  {{> navbar}}
+  {{> body}}
+  {{#unlesspage 'contacts'}}
+    {{> footer}}
+  {{/unlesspage}}
+</body>
+</html>
