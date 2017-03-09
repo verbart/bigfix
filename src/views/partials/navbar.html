@@ -1,8 +1,9 @@
-<nav>
-  <li {{#ifpage 'index'}}style="background:yellow;"{{/ifpage}}>
-    <a href="index.html">Ремонт телефонов</a>
-  </li>
-  <li {{#ifpage 'about'}}style="background:yellow;"{{/ifpage}}>
-    <a href="about.html">О нас</a>
-  </li>
+<nav class="navbar">
+  {{#each navbar-links}}
+    <a
+      class="navbar__item {{#ifpage link}}navbar__item_active{{/ifpage}}"
+      {{#unlesspage link}}href="{{link}}.html"{{/unlesspage}}>
+      {{title}}
+    </a>
+  {{/each}}
 </nav>

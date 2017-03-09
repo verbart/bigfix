@@ -7,19 +7,84 @@
 
   <script defer src="js/bundle.js"></script>
 
-  <title>Title</title>
+  <title>БИГФИКС | Сервисный центр</title>
 </head>
 <body>
-  <nav>
-    <li >
-      <a href="index.html">Ремонт телефонов</a>
-    </li>
-    <li >
-      <a href="about.html">О нас</a>
-    </li>
-  </nav>
+  <header class="mainHeader">
+    <div class="mainHeader__container container">
+      <div class="mainHeader__mobileTop">
+        <div class="mainHeader__menuButton toggleButton" data-target=".navbar"></div>
+        <img class="logo mainHeader__logo" src="images/logo.png" alt="БИГФИКС">
+      </div>
   
-  <h2>Page: computer-repair</h2>
+      <div class="mainHeader__address">
+        <address>
+          <p>
+            Работаем с 10:00 до 21:00<br>
+            Без перерывов и выходных
+          </p>
+  
+          <p>г. Уфа, ул. Менделеева 205а, ТЦ Башкирия</p>
+        </address>
+      </div>
+  
+      <div class="mainHeader__contacts">
+        <div class="mainHeader__phone">
+          <div class="phone">
+            <!--<a href="tel:+83472660131">8 (347) 266-01-31</a>-->
+            8 (347) 266-01-31
+          </div>
+        </div>
+  
+        <button class="button mainHeader__callMeButton">Перезвоните мне</button>
+  
+        <div class="mainHeader__checkStatus">
+          <a href="javascript:void(0)">Узнать статус ремонта</a>
+        </div>
+      </div>
+  
+      <nav class="navbar">
+          <a
+            class="navbar__item "
+            href="index.html">
+            Ремонт телефонов
+          </a>
+          <a
+            class="navbar__item navbar__item_active"
+            >
+            Ремонт компьютеров
+          </a>
+          <a
+            class="navbar__item "
+            href="refill-cartridges.html">
+            Заправка картриджей
+          </a>
+          <a
+            class="navbar__item "
+            href="news.html">
+            Новости
+          </a>
+          <a
+            class="navbar__item "
+            href="testimonials.html">
+            Отзывы
+          </a>
+          <a
+            class="navbar__item "
+            href="about.html">
+            О нас
+          </a>
+          <a
+            class="navbar__item "
+            href="contacts.html">
+            Контакты
+          </a>
+      </nav>
+      
+    </div>
+  </header>
+  
+  <h2 class="text_center">Page: computer-repair</h2>
   
     <footer class="mainFooter">
       <div class="container">
@@ -32,7 +97,7 @@
     
           <div class="col-lg-4">
             <p class="gutter_bottom">
-              <img src="images/logo.png" height="50" alt="БИГФИКС">
+              <img class="logo" src="images/logo.png" alt="БИГФИКС">
             </p>
             <address class="address">
               <p class="address__item address__item_location">

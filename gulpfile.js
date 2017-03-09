@@ -95,7 +95,7 @@ gulp.task('images', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('./src/views/**/*.html', gulp.series('views'));
+  gulp.watch(['./src/views/**/*.html', './src/data/**/*.*'], gulp.series('views'));
   gulp.watch('./src/styles/**/*.{css,styl}', gulp.series('styles'));
   gulp.watch('./src/scripts/**/*.js', gulp.series('scripts'));
 });

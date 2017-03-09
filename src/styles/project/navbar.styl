@@ -1,0 +1,42 @@
+.navbar
+  display flex
+  justify-content space-between
+  width 100%
+  margin-top 30px
+  padding-top 15px
+  padding-bottom 15px
+  border-top 1px solid #a0a0a0
+  z-index 1
+  transition .4s
+  @media (max-width 992px)
+    position fixed
+    top 60px
+    left 0
+    flex-direction column
+    margin-top 0
+    padding 0
+    min-width 320px
+    border-top none
+    box-shadow 0 7px 7px rgba(7, 7, 7, 0.3)
+    background-color #fff
+    transform translateY(-100%)
+  &.isOpen
+    transform translateY(0)
+  &__item
+    padding .4rem
+    text-decoration none
+    font-weight 400
+    transition .4s
+    @media (max-width 992px)
+      padding .5rem
+      color #363636
+      font-size 1.15rem
+    &:hover
+      opacity .7
+    &_active
+      border-bottom 1px solid red
+      &:hover
+        opacity 1
+      @media (max-width 992px)
+        background color_red
+        color #fff

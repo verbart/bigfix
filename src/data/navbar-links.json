@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Ремонт телефонов",
+    "link": "index"
+  }, {
+    "title": "Ремонт компьютеров",
+    "link": "computer-repair"
+  }, {
+    "title": "Заправка картриджей",
+    "link": "refill-cartridges"
+  }, {
+    "title": "Новости",
+    "link": "news"
+  }, {
+    "title": "Отзывы",
+    "link": "testimonials"
+  }, {
+    "title": "О нас",
+    "link": "about"
+  }, {
+    "title": "Контакты",
+    "link": "contacts"
+  }
+]

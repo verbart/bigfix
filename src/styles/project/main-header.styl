@@ -1,0 +1,72 @@
+.mainHeader
+  padding-top 20px
+  padding-bottom 20px
+  background url('../images/bigfix-pattern.png')
+  color #fff
+  @media (max-width 992px)
+    padding-top 70px
+    padding-bottom 10px
+    background #e5e5e5
+    color #363636
+  &__container
+    display flex
+    flex-wrap wrap
+    align-items center
+    @media (max-width 992px)
+      flex-direction column-reverse
+      width 100%
+  &__mobileTop
+    margin-right auto
+    @media (max-width 992px)
+      position fixed
+      left 0
+      right 0
+      top 0
+      display flex
+      justify-content space-between
+      align-items center
+      padding 10px 15px
+      background url('../images/bigfix-pattern.png')
+      box-shadow 0 7px 7px rgba(7, 7, 7, 0.3)
+      z-index 2
+  &__menuButton
+    @media (max-width 992px)
+      sprite($menu)
+      cursor pointer
+  &__logo
+    @media (max-width 992px)
+      margin-right 0
+      margin-left auto
+      height 40px
+      width auto
+  &__address
+    text-align center
+    font-weight 400
+    @media (max-width 992px)
+      font-weight 300
+      font-size .9rem
+  &__contacts
+    margin-left auto
+    text-align right
+    @media (max-width 992px)
+      display flex
+      flex-wrap wrap
+      flex-direction row
+      justify-content center
+      align-items center
+      width 100%
+    @media (max-width 430px)
+      flex-direction column
+  &__checkStatus
+    padding-top 10px
+    @media (max-width 992px)
+      width 100%
+      padding-top 30px
+      padding-bottom 10px
+      text-align center
+      font-weight 400
+  &__callMeButton
+    margin-left 15px
+    @media (min-width 992px), (max-width 430px)
+      margin-top 10px
+      margin-left 0

@@ -26,5 +26,8 @@
     "panini": "^1.3.1",
     "vinyl-buffer": "^1.0.0",
     "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1"
   }
 }
