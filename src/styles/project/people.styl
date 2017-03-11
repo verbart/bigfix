@@ -1,0 +1,18 @@
+.people
+  padding-top 15px
+  padding-bottom 15px
+  &__photo
+    width 340px
+    height @width
+    background-size cover
+    background-position center
+    @media (max-width 1200px)
+      width 280px
+      height @width
+    @media (max-width 992px)
+      width 200px
+      height @width
+    @media (max-width 768px)
+      width auto
+      height auto
+      padding-bottom 100%

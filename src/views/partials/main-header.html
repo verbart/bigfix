@@ -5,7 +5,8 @@
       <img class="logo mainHeader__logo" src="images/logo.png" alt="БИГФИКС">
     </div>
 
-    <div class="mainHeader__address">
+
+    <div class="mainHeader__address {{#ifpage 'contacts'}}hidden-md-down{{/ifpage}}">
       <address>
         <p>
           Работаем с 10:00 до 21:00<br>
@@ -15,6 +16,7 @@
         <p>г. Уфа, ул. Менделеева 205а, ТЦ Башкирия</p>
       </address>
     </div>
+
 
     <div class="mainHeader__contacts">
       <div class="mainHeader__phone">

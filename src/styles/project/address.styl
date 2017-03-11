@@ -4,18 +4,34 @@
     padding-left 3.5rem
     @media (max-width 992px)
       padding-left 0
-    &_location
-      &:before
-        sprite($location)
-    &_phone
-      &:before
-        sprite($phone-call)
-    &_email
-      &:before
-        sprite($mail)
+    &_location:before
+      sprite($location)
+    &_phone:before
+      sprite($phone-call)
+    &_email:before
+      sprite($mail)
     &:before
       position absolute
-      top 0
+      top 50%
       left 0
+      transform translateY(-50%)
       @media (max-width 992px)
         display none
+  &_black
+    .address__item
+      margin-top .65rem
+      margin-bottom .65rem
+      @media (max-width 992px)
+        padding-left 3.5rem
+      &_location:before
+        sprite($location_black)
+      &_phone:before
+        sprite($phone-call_black)
+      &_email:before
+        sprite($mail_black)
+      &_vk:before
+        sprite($vk_black)
+      &_instagram:before
+        sprite($instagram_black)
+      &_time:before
+        sprite($time_black)
