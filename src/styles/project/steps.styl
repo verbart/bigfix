@@ -1,0 +1,28 @@
+.step
+  &__container
+    display flex
+    justify-content center
+    flex-wrap wrap
+  &__item
+    display flex
+    justify-content center
+    align-items flex-end
+    width 33%
+    padding 15px
+    @media (max-width 992px)
+      justify-content flex-start
+      width 50%
+    @media (max-width 480px)
+      width 100%
+  &__index
+    margin-top 0
+    margin-bottom -0.3rem
+    margin-right .8rem
+    font-size 5rem
+    font-weight 400
+    color color_red
+  &__description
+    margin 0
+    font-weight 400
+    font-size 1.15rem
+    line-height 1.15
