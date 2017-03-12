@@ -1,60 +1,74 @@
-<section class="computerRepair hero gutter_bottom">
-  {{> main-header}}
+<div class="computerRepair">
+  <section class="hero gutter_bottom">
+    {{> main-header}}
 
-  <div class="container">
-    <h1 class="hero__header_1">
-      Неожиданно сломался компьютер,<br>
-      ноутбук или принтер?
-    </h1>
-    <h2 class="hero__header_2">
-      Выбирайте быстрый ремонт с гарантией на услугу 14 дней<br>
-      и гарантией на запчасти 30 дней
+    <div class="container">
+      <h1 class="hero__header_1">
+        Неожиданно сломался компьютер,<br>
+        ноутбук или принтер?
+      </h1>
+      <h2 class="hero__header_2">
+        Выбирайте быстрый ремонт с гарантией на услугу 14 дней<br>
+        и гарантией на запчасти 30 дней
+      </h2>
+      <h3 class="hero__header_3">Хотите вернуть технику в рабочее состояние за 24 часа без потери данных?</h3>
+
+      <form class="form contactForm">
+        <input class="form__input form__input_block contactForm__input" placeholder="Введите номер телефона" required>
+        <button class="button button_lg button_block contactForm__button">Оставьте заявку</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="services text_center gutter_bottom">
+    <div class="container">
+      <h2 class="sectionHeader">Приносите сегодня — забирайте завтра</h2>
+
+      <div class="row">
+        <div class="col-sm-6 col-md-3 services__item">
+          <div class="services__image" style="background-image: url(images/computer-repair/services/1.jpg);"></div>
+          <p class="services__description">
+            Очистим от пыли
+          </p>
+        </div>
+
+        <div class="col-sm-6 col-md-3 services__item">
+          <div class="services__image" style="background-image: url(images/computer-repair/services/2.jpg);"></div>
+          <p class="services__description">
+            Уберем влагу
+          </p>
+        </div>
+
+        <div class="col-sm-6 col-md-3 services__item">
+          <div class="services__image" style="background-image: url(images/computer-repair/services/3.jpg);"></div>
+          <p class="services__description">
+            Вернем работоспособность
+          </p>
+        </div>
+
+        <div class="col-sm-6 col-md-3 services__item">
+          <div class="services__image" style="background-image: url(images/computer-repair/services/4.jpg);"></div>
+          <p class="services__description">
+            Антивирус бесплатно
+          </p>
+        </div>
+      </div>
+
+      <div class="gutter_top">
+        <button class="button">Узнать подробнее</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="statusOnline gutter_vertical">
+    <h2 class="sectionHeader sectionHeader_lg sectionHeader_white">
+      Следить за статусом ремонта<br>
+      в режиме онлайн
     </h2>
-    <h3 class="hero__header_3">Хотите вернуть технику в рабочее состояние за 24 часа без потери данных?</h3>
 
-    <form class="form contactForm">
+    <form class="form contactForm gutter_bottom">
       <input class="form__input form__input_block contactForm__input" placeholder="Введите номер телефона" required>
-      <button class="button button_lg button_block contactForm__button">Оставьте заявку</button>
+      <button class="button button_lg button_block contactForm__button">Узнать статус</button>
     </form>
-  </div>
-</section>
-
-<section class="services text_center gutter_bottom">
-  <div class="container">
-    <h2 class="sectionHeader">Приносите сегодня — забирайте завтра</h2>
-
-    <div class="row">
-      <div class="col-sm-6 col-md-3 services__item">
-        <div class="services__image" style="background-image: url(images/computer-repair/services/1.jpg);"></div>
-        <p class="services__description">
-          Очистим от пыли
-        </p>
-      </div>
-
-      <div class="col-sm-6 col-md-3 services__item">
-        <div class="services__image" style="background-image: url(images/computer-repair/services/2.jpg);"></div>
-        <p class="services__description">
-          Уберем влагу
-        </p>
-      </div>
-
-      <div class="col-sm-6 col-md-3 services__item">
-        <div class="services__image" style="background-image: url(images/computer-repair/services/3.jpg);"></div>
-        <p class="services__description">
-          Вернем работоспособность
-        </p>
-      </div>
-
-      <div class="col-sm-6 col-md-3 services__item">
-        <div class="services__image" style="background-image: url(images/computer-repair/services/4.jpg);"></div>
-        <p class="services__description">
-          Антивирус бесплатно
-        </p>
-      </div>
-    </div>
-
-    <div class="gutter_top">
-      <button class="button">Узнать подробнее</button>
-    </div>
-  </div>
-</section>
+  </section>
+</div>

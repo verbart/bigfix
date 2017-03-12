@@ -1,56 +1,70 @@
-<section class="phoneRepair hero gutter_bottom">
-  {{> main-header}}
+<div class="phoneRepair">
+  <section class="hero gutter_bottom">
+    {{> main-header}}
 
-  <div class="container">
-    <h1 class="hero__header_1">
-      Ремонт телефонов<br>
-      Apple, Android и всех кнопочных моделей
-    </h1>
-    <h2 class="hero__header_2">
-      Выдаем подменный телефон<br>
-      в случае длительного ремонта, гарантия 14 дней
+    <div class="container">
+      <h1 class="hero__header_1">
+        Ремонт телефонов<br>
+        Apple, Android и всех кнопочных моделей
+      </h1>
+      <h2 class="hero__header_2">
+        Выдаем подменный телефон<br>
+        в случае длительного ремонта, гарантия 14 дней
+      </h2>
+      <h3 class="hero__header_3">Хотите вернуть телефон в рабочее состояние без потери времени и комфорта?</h3>
+
+      <form class="form contactForm">
+        <input class="form__input form__input_block contactForm__input" placeholder="Введите номер телефона" required>
+        <button class="button button_lg button_block contactForm__button">Оставьте заявку</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="services text_center gutter_bottom">
+    <div class="container">
+      <h2 class="sectionHeader">Оцените доступные цены на все виды услуг</h2>
+
+      <div class="row">
+        <div class="col-sm-6 col-md-4 services__item">
+          <div class="services__image" style="background-image: url(images/phone-repair/services/1.png);"></div>
+          <p class="services__description">
+            Замена разъема<br>
+            от 600 рублей
+          </p>
+        </div>
+
+        <div class="col-sm-6 col-md-4 services__item">
+          <div class="services__image" style="background-image: url(images/phone-repair/services/2.png);"></div>
+          <p class="services__description">
+            Замена дисплея<br>
+            от 1200 рублей
+          </p>
+        </div>
+
+        <div class="col-sm-6 offset-sm-3 col-md-4 offset-md-0 services__item">
+          <div class="services__image" style="background-image: url(images/phone-repair/services/3.png);"></div>
+          <p class="services__description">
+            Замена кнопок<br>
+            от 800 рублей
+          </p>
+        </div>
+      </div>
+
+      <div class="gutter_top">
+        <button class="button">Узнать цены на другие услуги</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="statusOnline gutter_vertical">
+    <h2 class="sectionHeader sectionHeader_lg sectionHeader_white">
+      Следить за статусом ремонта телефона<br>
+      в режиме онлайн
     </h2>
-    <h3 class="hero__header_3">Хотите вернуть телефон в рабочее состояние без потери времени и комфорта?</h3>
 
-    <form class="form contactForm">
+    <form class="form contactForm gutter_bottom">
       <input class="form__input form__input_block contactForm__input" placeholder="Введите номер телефона" required>
-      <button class="button button_lg button_block contactForm__button">Оставьте заявку</button>
+      <button class="button button_lg button_block contactForm__button">Узнать статус</button>
     </form>
-  </div>
-</section>
-
-<section class="services text_center gutter_bottom">
-  <div class="container">
-    <h2 class="sectionHeader">Оцените доступные цены на все виды услуг</h2>
-
-    <div class="row">
-      <div class="col-sm-6 col-md-4 services__item">
-        <div class="services__image" style="background-image: url(images/phone-repair/services/1.png);"></div>
-        <p class="services__description">
-          Замена разъема<br>
-          от 600 рублей
-        </p>
-      </div>
-
-      <div class="col-sm-6 col-md-4 services__item">
-        <div class="services__image" style="background-image: url(images/phone-repair/services/2.png);"></div>
-        <p class="services__description">
-          Замена дисплея<br>
-          от 1200 рублей
-        </p>
-      </div>
-
-      <div class="col-sm-6 offset-sm-3 col-md-4 offset-md-0 services__item">
-        <div class="services__image" style="background-image: url(images/phone-repair/services/3.png);"></div>
-        <p class="services__description">
-          Замена кнопок<br>
-          от 800 рублей
-        </p>
-      </div>
-    </div>
-
-    <div class="gutter_top">
-      <button class="button">Узнать цены на другие услуги</button>
-    </div>
-  </div>
-</section>
+  </section>
+</div>
