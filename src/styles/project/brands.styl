@@ -1,0 +1,54 @@
+.brand
+  text-align center
+  &__container
+    display flex
+    justify-content center
+    flex-wrap wrap
+    width 100%
+    &:first-child
+      @media (min-width 768px)
+        .brand__item:after
+          background transparent
+      @media (max-width 768px)
+        .brand__item:nth-child(-n+2):after
+          background transparent
+  &__item
+    position relative
+    display flex
+    flex-direction column
+    align-items center
+    justify-content space-between
+    width calc(25% - 4 * 12px)
+    padding 15px
+    margin 15px
+    text-align center
+    @media (max-width 768px)
+      width calc(50% - 3 * 12px)
+    &:before, &:after
+      content ''
+      display block
+      position absolute
+      background color_red
+    &:after
+      top -12px
+      left 12px
+      right 12px
+      height 1px
+    &:not(:first-child)
+      &:before
+        top 12px
+        bottom 12px
+        left -12px
+        width 1px
+    @media (max-width 768px)
+      &:nth-child(3n)
+        &:before
+          background transparent
+  &__logo
+    max-height 2.5rem
+  &__name
+    margin-top .6rem
+    margin-bottom 0
+    line-height 1
+    font-size 1.125rem
+    text-transform capitalize

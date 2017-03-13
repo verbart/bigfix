@@ -1,313 +1,359 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
-  <script defer src="js/bundle.js"></script>
+    <!--<script defer src="//remonline.ru/static/js/remonline-widget.js"></script>-->
+    <script defer src="js/bundle.js"></script>
 
-  <title>БИГФИКС | Сервисный центр</title>
-</head>
-<body>
-  <div class="computerRepair">
-    <section class="hero gutter_bottom">
-      <header class="mainHeader">
-        <div class="mainHeader__container container">
-          <div class="mainHeader__mobileTop">
-            <div class="mainHeader__menuButton toggleButton" data-target=".navbar"></div>
-            <img class="logo mainHeader__logo" src="images/logo.png" alt="БИГФИКС">
-          </div>
-      
-      
-          <div class="mainHeader__address ">
-            <address>
-              <p>
-                Работаем с 10:00 до 21:00<br>
-                Без перерывов и выходных
-              </p>
-      
-              <p>г. Уфа, ул. Менделеева 205а, ТЦ Башкирия</p>
-            </address>
-          </div>
-      
-      
-          <div class="mainHeader__contacts">
-            <div class="mainHeader__phone">
-              <div class="phone">
-                <!--<a href="tel:+83472660131">8 (347) 266-01-31</a>-->
-                8 (347) 266-01-31
+    <title>БИГФИКС | Сервисный центр</title>
+  </head>
+  <body>
+    <div class="computerRepair">
+      <section class="hero gutter_bottom">
+        <header class="mainHeader">
+          <div class="mainHeader__container container">
+            <div class="mainHeader__mobileTop">
+              <div class="mainHeader__menuButton toggleButton" data-target=".navbar"></div>
+              <img class="logo mainHeader__logo" src="images/logo.png" alt="БИГФИКС">
+            </div>
+        
+        
+            <div class="mainHeader__address ">
+              <address>
+                <p>
+                  Работаем с 10:00 до 21:00<br>
+                  Без перерывов и выходных
+                </p>
+        
+                <p>г. Уфа, ул. Менделеева 205а, ТЦ Башкирия</p>
+              </address>
+            </div>
+        
+        
+            <div class="mainHeader__contacts">
+              <div class="mainHeader__phone">
+                <div class="phone">
+                  <!--<a href="tel:+83472660131">8 (347) 266-01-31</a>-->
+                  8 (347) 266-01-31
+                </div>
+              </div>
+        
+              <button class="button mainHeader__callMeButton">Перезвоните мне</button>
+        
+              <div class="mainHeader__checkStatus">
+                <a href="javascript:void(0)">Узнать статус ремонта</a>
               </div>
             </div>
-      
-            <button class="button mainHeader__callMeButton">Перезвоните мне</button>
-      
-            <div class="mainHeader__checkStatus">
-              <a href="javascript:void(0)">Узнать статус ремонта</a>
-            </div>
+        
+            <nav class="navbar">
+                <a
+                  class="navbar__item "
+                  href="index.html">
+                  Ремонт телефонов
+                </a>
+                <a
+                  class="navbar__item navbar__item_active"
+                  >
+                  Ремонт компьютеров
+                </a>
+                <a
+                  class="navbar__item "
+                  href="refill-cartridges.html">
+                  Заправка картриджей
+                </a>
+                <a
+                  class="navbar__item "
+                  href="news.html">
+                  Новости
+                </a>
+                <a
+                  class="navbar__item "
+                  href="testimonials.html">
+                  Отзывы
+                </a>
+                <a
+                  class="navbar__item "
+                  href="about.html">
+                  О нас
+                </a>
+                <a
+                  class="navbar__item "
+                  href="contacts.html">
+                  Контакты
+                </a>
+            </nav>
+            
           </div>
-      
-          <nav class="navbar">
-              <a
-                class="navbar__item "
-                href="index.html">
-                Ремонт телефонов
-              </a>
-              <a
-                class="navbar__item navbar__item_active"
-                >
-                Ремонт компьютеров
-              </a>
-              <a
-                class="navbar__item "
-                href="refill-cartridges.html">
-                Заправка картриджей
-              </a>
-              <a
-                class="navbar__item "
-                href="news.html">
-                Новости
-              </a>
-              <a
-                class="navbar__item "
-                href="testimonials.html">
-                Отзывы
-              </a>
-              <a
-                class="navbar__item "
-                href="about.html">
-                О нас
-              </a>
-              <a
-                class="navbar__item "
-                href="contacts.html">
-                Контакты
-              </a>
-          </nav>
-          
+        </header>
+        
+    
+        <div class="container">
+          <h1 class="hero__header_1">
+            Неожиданно сломался компьютер,<br>
+            ноутбук или принтер?
+          </h1>
+          <h2 class="hero__header_2">
+            Выбирайте быстрый ремонт с гарантией на услугу 14 дней<br>
+            и гарантией на запчасти 30 дней
+          </h2>
+          <h3 class="hero__header_3">Хотите вернуть технику в рабочее состояние за 24 часа без потери данных?</h3>
+    
+          <form class="form contactForm">
+            <input class="form__input form__input_block contactForm__input" placeholder="Введите номер телефона" required>
+            <button class="button button_lg button_block contactForm__button">Оставьте заявку</button>
+          </form>
         </div>
-      </header>
-      
-  
-      <div class="container">
-        <h1 class="hero__header_1">
-          Неожиданно сломался компьютер,<br>
-          ноутбук или принтер?
-        </h1>
-        <h2 class="hero__header_2">
-          Выбирайте быстрый ремонт с гарантией на услугу 14 дней<br>
-          и гарантией на запчасти 30 дней
-        </h2>
-        <h3 class="hero__header_3">Хотите вернуть технику в рабочее состояние за 24 часа без потери данных?</h3>
-  
-        <form class="form contactForm">
-          <input class="form__input form__input_block contactForm__input" placeholder="Введите номер телефона" required>
-          <button class="button button_lg button_block contactForm__button">Оставьте заявку</button>
-        </form>
-      </div>
-    </section>
-  
-    <section class="services text_center gutter_bottom">
-      <div class="container">
-        <h2 class="sectionHeader">Приносите сегодня — забирайте завтра</h2>
-  
-        <div class="row">
-          <div class="col-sm-6 col-md-3 services__item">
-            <div class="services__image" style="background-image: url(images/computer-repair/services/1.jpg);"></div>
-            <p class="services__description">
-              Очистим от пыли
-            </p>
-          </div>
-  
-          <div class="col-sm-6 col-md-3 services__item">
-            <div class="services__image" style="background-image: url(images/computer-repair/services/2.jpg);"></div>
-            <p class="services__description">
-              Уберем влагу
-            </p>
-          </div>
-  
-          <div class="col-sm-6 col-md-3 services__item">
-            <div class="services__image" style="background-image: url(images/computer-repair/services/3.jpg);"></div>
-            <p class="services__description">
-              Вернем работоспособность
-            </p>
-          </div>
-  
-          <div class="col-sm-6 col-md-3 services__item">
-            <div class="services__image" style="background-image: url(images/computer-repair/services/4.jpg);"></div>
-            <p class="services__description">
-              Антивирус бесплатно
-            </p>
-          </div>
-        </div>
-  
-        <div class="gutter_top">
-          <button class="button">Узнать подробнее</button>
-        </div>
-      </div>
-    </section>
-  
-    <section class="statusOnline gutter_vertical">
-      <div class="container">
-        <h2 class="sectionHeader sectionHeader_lg sectionHeader_white">
-          Следить за статусом ремонта<br>
-          в режиме онлайн
-        </h2>
-  
-        <form class="form contactForm gutter_bottom">
-          <input class="form__input form__input_block contactForm__input" placeholder="Введите номер телефона" required>
-          <button class="button button_lg button_block contactForm__button">Узнать статус</button>
-        </form>
-      </div>
-    </section>
-  
-    <section class="testimonials gutter_bottom">
-      <div class="container">
-        <h2 class="sectionHeader sectionHeader_lg text_white">
-          Что говорят довольные владельцы<br>
-          спасенной техники?
-        </h2>
-  
-        <div class="testimonials__slider">
-          <div>
-            <div class="testimonials__photo" style="background-image: url(images/testimonials/1.jpg);"></div>
-            <h3 class="testimonials__name">Имя Фамилия</h3>
-            <p class="testimonials__opinion">
-              С другой стороны консультация с широким активом требуют от нас анализа новых предложений. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности в значительной степени обуславливает создание дальнейших направлений развития.
-            </p>
-          </div>
-          <div>
-            <div class="testimonials__photo" style="background-image: url(images/testimonials/1.jpg);"></div>
-            <h3 class="testimonials__name">Имя Фамилия</h3>
-            <p class="testimonials__opinion">
-              С другой стороны консультация с широким активом требуют от нас анализа новых предложений. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности в значительной степени обуславливает создание дальнейших направлений развития.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <section class="gutter_bottom">
-      <div class="container">
-        <h2 class="sectionHeader">
-          Как быстро и качественно отремонтировать<br>
-          ПК, ноутбук или принтер?
-        </h2>
-  
-        <div class="step__container">
-          <div class="step__item">
-            <h3 class="step__index">1</h3>
-            <p class="step__description">
-              Оставьте заявку<br>
-              на сайте.
-            </p>
-          </div>
-  
-          <div class="step__item">
-            <h3 class="step__index">2</h3>
-            <p class="step__description">
-              Приносите технику
-              в удобное время.</p>
-          </div>
-  
-          <div class="step__item">
-            <h3 class="step__index">3</h3>
-            <p class="step__description">
-              Подождите 24 часа или
-              закажите срочный ремонт.
-            </p>
-          </div>
-  
-          <div class="step__item">
-            <h3 class="step__index">4</h3>
-            <p class="step__description">
-              Оплатите за услугу по
-              факту готовности техники.
-            </p>
-          </div>
-  
-          <div class="step__item">
-            <h3 class="step__index">5</h3>
-            <p class="step__description">
-              Наслаждайтесь быстрой работой
-              Вашего ПК, ноутбука или принтера!
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <section class="proposal gutter_vertical">
-      <div class="container">
-        <h2 class="sectionHeader sectionHeader_lg text_white">
-          Неожиданно сломался компьютер,<br>
-          ноутбук или принтер?
-        </h2>
-  
-        <h2 class="text_center text_white gutter_bottom">
-          Хотите вернуть технику в рабочее состояние<br>
-          без потери данных и времени?
-        </h2>
-  
-        <form class="form contactForm gutter_bottom">
-          <input class="form__input form__input_block contactForm__input" placeholder="Введите номер телефона" required>
-          <button class="button button_lg button_block contactForm__button">Оставить заявку</button>
-        </form>
       </section>
-    </div>
-  </div>
-  
-    <footer class="mainFooter">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="mainFooter__map">
-              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=rY-uIPfqsvLgaynwp6q1Dq_NcGtnn_3P&amp;width=100%25&amp;height=220&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+    
+      <section class="services text_center gutter_bottom">
+        <div class="container">
+          <h2 class="sectionHeader">Приносите сегодня — забирайте завтра</h2>
+    
+          <div class="row">
+            <div class="col-sm-6 col-md-3 services__item">
+              <div class="services__image" style="background-image: url(images/computer-repair/services/1.jpg);"></div>
+              <p class="services__description">
+                Очистим от пыли
+              </p>
+            </div>
+    
+            <div class="col-sm-6 col-md-3 services__item">
+              <div class="services__image" style="background-image: url(images/computer-repair/services/2.jpg);"></div>
+              <p class="services__description">
+                Уберем влагу
+              </p>
+            </div>
+    
+            <div class="col-sm-6 col-md-3 services__item">
+              <div class="services__image" style="background-image: url(images/computer-repair/services/3.jpg);"></div>
+              <p class="services__description">
+                Вернем работоспособность
+              </p>
+            </div>
+    
+            <div class="col-sm-6 col-md-3 services__item">
+              <div class="services__image" style="background-image: url(images/computer-repair/services/4.jpg);"></div>
+              <p class="services__description">
+                Антивирус бесплатно
+              </p>
             </div>
           </div>
     
-          <div class="col-lg-4">
-            <p class="gutter_bottom_half">
-              <img class="logo" src="images/logo.png" alt="БИГФИКС">
-            </p>
-            <address class="address">
-              <p class="address__item address__item_location">
-                ТЦ "Башкирия" ул. Менделеева, 205а
-                1-й этаж, "Дом быта"
-              </p>
-              <p class="address__item address__item_phone">
-                8 (347) 266-01-31<br>
-                8 (927) 236-01-31 - WhatsApp
-              </p>
-              <p class="address__item address__item_email">
-                <a href="mailto:bigfix@inbox.ru">bigfix@inbox.ru</a>
-              </p>
-            </address>
-          </div>
-    
-          <div class="col-xs-10 offset-xs-1 col-lg-3 offset-lg-1">
-            <div class="mainFooter__contactForm">
-              <p>Не нашли ответ на свой вопрос?</p>
-              <p>
-                Оставьте заявку и мы<br>
-                свяжемся с вами!
-              </p>
-    
-            </div>
-    
-            <form class="form">
-              <div class="gutter_bottom_half">
-                <input class="form__input form__input_block" name="phone" required placeholder="Введите номер телефона">
-              </div>
-              <button class="button button_block">Оставить заявку</button>
-            </form>
-    
+          <div class="gutter_top">
+            <button class="button button_long">Узнать подробнее</button>
           </div>
         </div>
-      </div>
-    </footer>
+      </section>
     
-</body>
+      <section class="statusOnline gutter_vertical">
+        <div class="container">
+          <h2 class="sectionHeader sectionHeader_lg sectionHeader_white">
+            Следить за статусом ремонта<br>
+            в режиме онлайн
+          </h2>
+    
+          <form class="form contactForm gutter_bottom">
+            <input class="form__input form__input_block contactForm__input" placeholder="Введите номер телефона" required>
+            <button class="button button_lg button_block contactForm__button">Узнать статус</button>
+          </form>
+        </div>
+      </section>
+    
+      <section class="brand gutter_bottom">
+        <div class="container">
+          <h2 class="sectionHeader">Ремонтируем такие виды техники</h2>
+    
+          <div class="gutter_bottom">
+            <div class="brand__container">
+              <div class="brand__item">
+                <img class="brand__logo" src="images/thumbs/pc.png" alt="">
+                <p class="brand__name">ПК</p>
+              </div>
+              <div class="brand__item">
+                <img class="brand__logo" src="images/thumbs/notebook_black.png" alt="">
+                <p class="brand__name">Ноутбуки</p>
+              </div>
+              <div class="brand__item">
+                <img class="brand__logo" src="images/thumbs/tablet.png" alt="">
+                <p class="brand__name">Планшеты</p>
+              </div>
+              <div class="brand__item">
+                <img class="brand__logo" src="images/thumbs/printer_black.png" alt="">
+                <p class="brand__name">Лазерные принтеры</p>
+              </div>
+            </div>
+            <div class="brand__container">
+              <div class="brand__item">
+                <img class="brand__logo" src="images/thumbs/xerox.png" alt="">
+                <p class="brand__name">Ксероксы</p>
+              </div>
+              <div class="brand__item">
+                <img class="brand__logo" src="images/thumbs/smartphone_black.png" alt="">
+                <p class="brand__name">Телефоны</p>
+              </div>
+              <div class="brand__item">
+                <img class="brand__logo" src="images/thumbs/reader.png" alt="">
+                <p class="brand__name">Ридеры</p>
+              </div>
+            </div>
+          </div>
+    
+          <button class="button button_long">Оставить заявку</button>
+        </div>
+      </section>
+    
+      <section class="testimonials gutter_bottom">
+        <div class="container">
+          <h2 class="sectionHeader sectionHeader_lg text_white">
+            Что говорят довольные владельцы<br>
+            спасенной техники?
+          </h2>
+    
+          <div class="testimonials__slider">
+            <div>
+              <div class="testimonials__photo" style="background-image: url(images/testimonials/1.jpg);"></div>
+              <h3 class="testimonials__name">Имя Фамилия</h3>
+              <p class="testimonials__opinion">
+                С другой стороны консультация с широким активом требуют от нас анализа новых предложений. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности в значительной степени обуславливает создание дальнейших направлений развития.
+              </p>
+            </div>
+            <div>
+              <div class="testimonials__photo" style="background-image: url(images/testimonials/1.jpg);"></div>
+              <h3 class="testimonials__name">Имя Фамилия</h3>
+              <p class="testimonials__opinion">
+                С другой стороны консультация с широким активом требуют от нас анализа новых предложений. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности в значительной степени обуславливает создание дальнейших направлений развития.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <section class="gutter_bottom">
+        <div class="container">
+          <h2 class="sectionHeader">
+            Как быстро и качественно отремонтировать<br>
+            ПК, ноутбук или принтер?
+          </h2>
+    
+          <div class="step__container">
+            <div class="step__item">
+              <h3 class="step__index">1</h3>
+              <p class="step__description">
+                Оставьте заявку<br class="hidden-sm-down">
+                на сайте.
+              </p>
+            </div>
+    
+            <div class="step__item">
+              <h3 class="step__index">2</h3>
+              <p class="step__description">
+                Приносите технику
+                в удобное время.</p>
+            </div>
+    
+            <div class="step__item">
+              <h3 class="step__index">3</h3>
+              <p class="step__description">
+                Подождите 24 часа или
+                закажите срочный ремонт.
+              </p>
+            </div>
+    
+            <div class="step__item">
+              <h3 class="step__index">4</h3>
+              <p class="step__description">
+                Оплатите за услугу по
+                факту готовности техники.
+              </p>
+            </div>
+    
+            <div class="step__item">
+              <h3 class="step__index">5</h3>
+              <p class="step__description">
+                Наслаждайтесь быстрой работой
+                Вашего ПК, ноутбука или принтера!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <section class="proposal gutter_vertical">
+        <div class="container">
+          <h2 class="sectionHeader sectionHeader_lg text_white">
+            Неожиданно сломался компьютер,<br>
+            ноутбук или принтер?
+          </h2>
+    
+          <h2 class="text_center text_white gutter_bottom">
+            Хотите вернуть технику в рабочее состояние<br>
+            без потери данных и времени?
+          </h2>
+    
+          <form class="form contactForm gutter_bottom">
+            <input class="form__input form__input_block contactForm__input" placeholder="Введите номер телефона" required>
+            <button class="button button_lg button_block contactForm__button">Оставить заявку</button>
+          </form>
+        </section>
+      </div>
+    </div>
+    
+      <footer class="mainFooter">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="mainFooter__map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=rY-uIPfqsvLgaynwp6q1Dq_NcGtnn_3P&amp;width=100%25&amp;height=220&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+              </div>
+            </div>
+      
+            <div class="col-lg-4">
+              <p class="gutter_bottom_half">
+                <img class="logo" src="images/logo.png" alt="БИГФИКС">
+              </p>
+              <address class="address">
+                <p class="address__item address__item_location">
+                  ТЦ "Башкирия" ул. Менделеева, 205а
+                  1-й этаж, "Дом быта"
+                </p>
+                <p class="address__item address__item_phone">
+                  8 (347) 266-01-31<br>
+                  8 (927) 236-01-31 - WhatsApp
+                </p>
+                <p class="address__item address__item_email">
+                  <a href="mailto:bigfix@inbox.ru">bigfix@inbox.ru</a>
+                </p>
+              </address>
+            </div>
+      
+            <div class="col-xs-10 offset-xs-1 col-lg-3 offset-lg-1">
+              <div class="mainFooter__contactForm">
+                <p>Не нашли ответ на свой вопрос?</p>
+                <p>
+                  Оставьте заявку и мы<br>
+                  свяжемся с вами!
+                </p>
+      
+              </div>
+      
+              <form class="form">
+                <div class="gutter_bottom_half">
+                  <input class="form__input form__input_block" name="phone" required placeholder="Введите номер телефона">
+                </div>
+                <button class="button button_block">Оставить заявку</button>
+              </form>
+      
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+
+    <div id="remonline-widget" data-key="9f788719f7ede8ec7cf5ba905875dbf7"></div>
+  </body>
 </html>
