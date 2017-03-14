@@ -4,4 +4,34 @@
 
 <section class="container gutter_bottom">
   <h2 class="pageHeader">Новости</h2>
+
+  {{#repeat 3}}
+  <div class="row newsPreview">
+    <div class="col-md-5 col-lg-4">
+      <img class="newsPreview__image" src="images/news/1.jpg" alt="">
+    </div>
+    <div class="col-md-7 col-lg-8 newsPreview__body">
+      <h3 class="newsPreview__caption">Название новости</h3>
+      <small>Admin, 03.11.2016</small>
+      <p class="gutter_bottom_half">Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Повседневная практика показывает, что реализация намеченных.</p>
+
+      <a class="button button_long newsPreview__button" href="single-news.html">Подробнее</a>
+    </div>
+
+    <div class="col-md-10 offset-md-1">
+      <hr>
+    </div>
+  </div>
+  {{/repeat}}
+
+  <div class="pagination gutter_vertical">
+    <a class="pagination__item pagination__prev" href="">Назад</a>
+
+    <a class="pagination__item pagination__item_active" href="">1</a>
+    <a class="pagination__item" href="">2</a>
+    <a class="pagination__item" href="">3</a>
+    <a class="pagination__item" href="">4</a>
+
+    <a class="pagination__item pagination__next" href="">Далее</a>
+  </div>
 </section>

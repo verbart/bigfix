@@ -1,5 +1,6 @@
 @import '../../../node_modules/slick-carousel/slick/slick.css'
 @import '../../../node_modules/slick-carousel/slick/slick-theme.css'
+@import '../../../node_modules/simplelightbox/dist/simplelightbox.css'
 
 .slick
   &-arrow
@@ -15,3 +16,38 @@
   &-next, &-next:hover, &-next:focus
     sprite($arrow-to-right)
     right 0
+
+.simplelightbox
+  margin-left -16px
+  margin-right -16px
+  a
+    position relative
+    display inline-block
+    margin 16px
+    &:before
+      sprite($fullscreen)
+      content ''
+      display block
+      position absolute
+      top 50%
+      left 50%
+      opacity 0
+      transform translate(-50%, -50%)
+      transition .4s
+    &:after
+      content ''
+      display block
+      position absolute
+      top 0
+      bottom 0
+      left 0
+      right 0
+      transition .4s
+    &:hover
+      &:after
+        background rgba(color_red, 40%)
+    &:hover
+      &:before
+        opacity 1
+    img
+      height 200px

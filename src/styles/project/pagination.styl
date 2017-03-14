@@ -1,0 +1,30 @@
+.pagination
+  text-align center
+  &__item
+    margin .4rem
+    text-decoration none
+    font-size 1.2rem
+    font-weight 400
+    transition .4s
+    &:hover
+      opacity .8
+    &_active
+      color color_red
+  &__prev
+    position relative
+    padding-left 1.2rem
+    &:before
+      sprite($arrow-to-left_black)
+      position absolute
+      top 50%
+      transform translateY(-50%)
+      left 0
+  &__next
+    position relative
+    padding-right 1.2rem
+    &:after
+      sprite($arrow-to-right_black)
+      position absolute
+      top 50%
+      transform translateY(-50%)
+      right 0
