@@ -2,12 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Лучший сервисный центр в Мире">
+    <meta name="keywords" content="bigdix, бигфикс, ремонт, сервис">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/style.css">
 
-    <!--<script defer src="//remonline.ru/static/js/remonline-widget.js"></script>-->
+    <script defer src="//remonline.ru/static/js/remonline-widget.js"></script>
     <script defer src="js/bundle.js"></script>
 
     <title>БИГФИКС | Сервисный центр</title>
@@ -18,6 +20,7 @@
       {{> main-footer}}
     {{/unlesspage}}
 
-    <div id="remonline-widget" data-key="9f788719f7ede8ec7cf5ba905875dbf7"></div>
+    {{> modal-remonline}}
+    {{> modal-call}}
   </body>
 </html>

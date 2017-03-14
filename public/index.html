@@ -2,12 +2,14 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Лучший сервисный центр в Мире">
+    <meta name="keywords" content="bigdix, бигфикс, ремонт, сервис">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/style.css">
 
-    <!--<script defer src="//remonline.ru/static/js/remonline-widget.js"></script>-->
+    <script defer src="//remonline.ru/static/js/remonline-widget.js"></script>
     <script defer src="js/bundle.js"></script>
 
     <title>БИГФИКС | Сервисный центр</title>
@@ -43,10 +45,10 @@
                 </div>
               </div>
         
-              <button class="button mainHeader__callMeButton">Перезвоните мне</button>
+              <button class="button mainHeader__callMeButton" data-remodal-target="modal-call">Перезвоните мне</button>
         
               <div class="mainHeader__checkStatus">
-                <a href="javascript:void(0)">Узнать статус ремонта</a>
+                <a data-remodal-target="modal" href="javascript:void(0)">Узнать статус ремонта</a>
               </div>
             </div>
         
@@ -141,7 +143,7 @@
           </div>
     
           <div class="gutter_top">
-            <button class="button button_long">Узнать цены на другие услуги</button>
+            <button class="button button_long" data-remodal-target="modal-call">Узнать цены на другие услуги</button>
           </div>
         </div>
       </section>
@@ -353,7 +355,7 @@
     
           <h3 class="gutter_bottom">А также все кнопочные модели</h3>
     
-          <button class="button button_long">Оставить заявку</button>
+          <button class="button button_long" data-remodal-target="modal-call">Оставить заявку</button>
         </div>
       </section>
     
@@ -505,6 +507,28 @@
       </footer>
       
 
-    <div id="remonline-widget" data-key="9f788719f7ede8ec7cf5ba905875dbf7"></div>
+    <div class="remodal remodal-sm" data-remodal-id="modal">
+      <button data-remodal-action="close" class="remodal-close"></button>
+    
+      <div id="remonline-widget" data-key="9f788719f7ede8ec7cf5ba905875dbf7"></div>
+    </div>
+    
+    <div class="remodal remodal-sm" data-remodal-id="modal-call">
+      <button data-remodal-action="close" class="remodal-close"></button>
+    
+      <h2>Оставить заявку</h2>
+    
+      <form class="form container-fluid">
+        <div class="gutter_bottom_half">
+          <input class="form__input form__input_white form__input_block" name="name" required placeholder="Ваше имя">
+        </div>
+        <div class="gutter_bottom_half">
+          <input class="form__input form__input_white form__input_block" name="phone" required placeholder="Ваш номер">
+        </div>
+    
+        <button class="button button_block">Заказать обратный звонок</button>
+      </form>
+    </div>
+    
   </body>
 </html>
