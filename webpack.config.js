@@ -32,7 +32,7 @@ if (!isDevelopment) {
   module.exports.plugins.push(
     new webpack.optimize.UglifyJsPlugin({
       beautify: false,
-      mangle: false,
+      // mangle: false,
       compress: true,
       comments: false,
       drop_console: true,
