@@ -14,6 +14,7 @@ const tinypng = require('gulp-tinypng-nokey');
 const spritesmith = require('gulp.spritesmith');
 const webpack = require('webpack');
 const panini = require('panini');
+const htmlmin = require('gulp-htmlmin');
 
 const isDevelopment = process.env.NODE_ENV !== 'production';
 
@@ -29,6 +30,7 @@ gulp.task('views', function () {
       helpers: './src/helpers',
       data: './src/data'
     }))
+    .pipe(gulpIf(isDevelopment, htmlmin({collapseWhitespace: false})))
     .pipe(gulp.dest('./public'));
 });
 
@@ -95,7 +97,7 @@ gulp.task('images', function () {
 });
 
 gulp.task('copy', function () {
-  return gulp.src(['./src/browserconfig.xml', './src/manifest.json'])
+  return gulp.src('./src/root-files/**/{*.*,.*}')
     .pipe(gulp.dest('./public'));
 });
 
@@ -103,14 +105,15 @@ gulp.task('watch', function () {
   gulp.watch(['./src/views/**/*.html', './src/data/**/*.*'], gulp.series('views'));
   gulp.watch('./src/styles/**/*.{css,styl}', gulp.series('styles'));
   gulp.watch('./src/scripts/**/*.js', gulp.series('scripts'));
+  gulp.watch('./src/root-files/**/*.*', gulp.series('copy'));
 });
 
 gulp.task('serve', function () {
   browserSync.init({
-    // proxy: 'example.com',
+    proxy: 'localhost/bigfix/code/public',
     // files: 'public/**/*.*',
-    // https: true,
-    server: './public',
+    https: true,
+    // server: './public',
     port: 8080
   });
 

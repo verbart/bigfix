@@ -2,7 +2,7 @@
   {{#each navbar-links}}
     <a
       class="navbar__item {{#ifpage link}}navbar__item_active{{/ifpage}}"
-      {{#unlesspage link}}href="{{link}}.html"{{/unlesspage}}>
+      {{#unlesspage link}}href="{{link}}"{{/unlesspage}}>
       {{title}}
     </a>
   {{/each}}

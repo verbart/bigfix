@@ -1,0 +1,10 @@
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+
+RewriteRule ^(([^/]+/)*[^.]+)$ /$1.html [L]
+
+RewriteCond %{HTTP_HOST} ^www.bigfix.biz
+RewriteRule (.*) http://bigfix.biz/$1 [R=301,L]
+
+DirectoryIndex phone-repair.html

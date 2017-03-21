@@ -1,4 +1,6 @@
 .slick
+  &-loading &-list
+    background #fff center center no-repeat
   &-arrow
     z-index 1
     transition .4s
@@ -6,9 +8,14 @@
       opacity .6
     &:before
       content ''
+      font-family inherit
   &-prev, &-prev:hover, &-prev:focus
     sprite($arrow-to-left)
     left 0
   &-next, &-next:hover, &-next:focus
     sprite($arrow-to-right)
     right 0
+  &-dots
+    li button:before
+        content ''
+        font-family inherit

@@ -28,17 +28,26 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script defer src="//remonline.ru/static/js/remonline-widget.js"></script>
+    <script defer src="https://vk.com/js/api/openapi.js?142"></script>
     <script defer src="js/bundle.js"></script>
 
     <title>БИГФИКС | Сервисный центр</title>
   </head>
   <body>
     {{> body}}
+
     {{#unlesspage 'contacts'}}
       {{> main-footer}}
     {{/unlesspage}}
 
-    {{> modal-remonline}}
-    {{> modal-call}}
+    <!-- MODALS START -->
+    {{> status}}
+    {{> callback}}
+    <!-- MODALS END -->
+
+    <!-- PLUGINS START -->
+    {{> yandex-metrika}}
+    {{> chatra}}
+    <!-- PLUGINS START -->
   </body>
 </html>
