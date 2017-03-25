@@ -38,24 +38,24 @@ $('.callbackForm').submit(function (e) {
     });
 });
 
-// $('.checkStatusForm').submit(function (e) {
-//   e.preventDefault();
-//
-//   const form = $(this);
-//   const phone = $(this.elements.phone).val();
-//   const modal = $('[data-remodal-id=status]').remodal();
-//
-//   // modal.open();
-//
-//   $.ajax({
-//     type: 'GET',
-//     url: 'https://remonline.ru/orders/json/getorders',
-//     data: {
-//       key: '9f788719f7ede8ec7cf5ba905875dbf7',
-//       code: phone
-//     }
-//   })
-//   //   .done(function (response) {
-//   //     console.log(response);
-//   //   });
-// });
+$('.checkStatusForm').submit(function (e) {
+  e.preventDefault();
+
+  const form = $(this);
+  const phone = $(this.elements.phone).val();
+  const modal = $('[data-remodal-id=status]').remodal();
+
+  // modal.open();
+
+  $.ajax({
+    type: 'GET',
+    url: 'https://api.remonline.ru/order/',
+    data: {
+      token: '07856a52e0a4a8000b2b2061c8739df8f7265947',
+      'client_phones[]': phone
+    }
+  })
+    .done(function (response) {
+      console.log(response);
+    });
+});

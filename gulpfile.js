@@ -112,7 +112,7 @@ gulp.task('serve', function () {
   browserSync.init({
     proxy: 'localhost/bigfix/code/public',
     // files: 'public/**/*.*',
-    https: true,
+    // https: true,
     // server: './public',
     port: 8080
   });
