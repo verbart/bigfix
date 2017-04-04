@@ -2,6 +2,10 @@ const $ = window.$ = window.jQuery = require('jquery');
 import 'slick-carousel';
 import 'simplelightbox';
 import 'remodal';
+import toastr from 'toastr';
+
+
+toastr.options.closeButton = true;
 
 $('.toggleButton').click(function () {
   $($(this).data('target')).toggleClass('isOpen');
@@ -32,30 +36,29 @@ $('.callbackForm').submit(function (e) {
     data: form.serialize()
   })
     .done(function () {
-      setTimeout(function() {
-        form.trigger('reset');
-      }, 1000);
+      toastr.success('Ваша заявка отправлена!');
+      form.trigger('reset');
     });
 });
 
-$('.checkStatusForm').submit(function (e) {
-  e.preventDefault();
-
-  const form = $(this);
-  const phone = $(this.elements.phone).val();
-  const modal = $('[data-remodal-id=status]').remodal();
-
-  // modal.open();
-
-  $.ajax({
-    type: 'GET',
-    url: 'https://api.remonline.ru/order/',
-    data: {
-      token: '07856a52e0a4a8000b2b2061c8739df8f7265947',
-      'client_phones[]': phone
-    }
-  })
-    .done(function (response) {
-      console.log(response);
-    });
-});
+// $('.checkStatusForm').submit(function (e) {
+//   e.preventDefault();
+//
+//   const form = $(this);
+//   const phone = $(this.elements.phone).val();
+//   const modal = $('[data-remodal-id=status]').remodal();
+//
+//   // modal.open();
+//
+//   $.ajax({
+//     type: 'GET',
+//     url: 'https://api.remonline.ru/order/',
+//     data: {
+//       token: '07856a52e0a4a8000b2b2061c8739df8f7265947',
+//       'client_phones[]': phone
+//     }
+//   })
+//     .done(function (response) {
+//       console.log(response);
+//     });
+// });

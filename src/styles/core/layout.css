@@ -1393,3 +1393,17 @@ html {
 .hidden-xl-down {
   display: none !important;
 }
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}

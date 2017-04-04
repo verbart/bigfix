@@ -37,21 +37,21 @@
           <div class="services__image" style="background-image: url(images/phone-repair/services/2.png);"></div>
           <p class="services__description">
             Замена дисплея<br>
-            от 1200 рублей
+            от 400 рублей
           </p>
         </div>
 
         <div class="col-sm-6 offset-sm-3 col-md-4 offset-md-0 services__item">
           <div class="services__image" style="background-image: url(images/phone-repair/services/3.png);"></div>
           <p class="services__description">
-            Замена кнопок<br>
-            от 800 рублей
+            Замена кнопок, динамиков, микрофонов<br>
+            от 450 рублей
           </p>
         </div>
       </div>
 
       <div class="gutter_top">
-        <button class="button button_long" data-remodal-target="callback">Узнать цены на другие услуги</button>
+        <button class="button button_lg" data-remodal-target="phone-repair-price">Узнать цены на другие услуги</button>
       </div>
     </div>
   </section>
@@ -63,10 +63,13 @@
         в режиме онлайн
       </h2>
 
-      <form class="form checkStatusForm contactForm gutter_bottom">
-        <input class="form__input form__input_block contactForm__input" placeholder="Введите номер телефона" name="phone" required>
-        <button class="button button_lg button_block contactForm__button">Узнать статус</button>
-      </form>
+      <!--<form class="form checkStatusForm contactForm gutter_bottom">-->
+        <!--<input class="form__input form__input_block contactForm__input" placeholder="Введите номер телефона" name="phone" required>-->
+        <!--<button class="button button_lg button_block contactForm__button">Узнать статус</button>-->
+      <!--</form>-->
+      <div class="text_center">
+        <button class="button button_lg" data-remodal-target="status">Узнать статус заказа</button>
+      </div>
     </div>
   </section>
 
@@ -263,7 +266,7 @@
 
       <h3 class="gutter_bottom">А также все кнопочные модели</h3>
 
-      <button class="button button_long" data-remodal-target="callback">Оставить заявку</button>
+      <button class="button button_lg" data-remodal-target="callback">Оставить заявку</button>
     </div>
   </section>
 
@@ -275,15 +278,27 @@
       </h2>
 
       <div class="testimonials__slider">
-        {{#repeat 2}}
-        <div>
-          <div class="testimonials__photo" style="background-image: url(images/testimonials/1.jpg);"></div>
-          <h3 class="testimonials__name">Имя Фамилия</h3>
+        <section>
+          <div class="testimonials__photo" style="background-image: url(images/testimonials/2.jpg);"></div>
+          <h3 class="testimonials__name">Сергей Торчилин</h3>
           <p class="testimonials__opinion">
-            С другой стороны консультация с широким активом требуют от нас анализа новых предложений. Значимость этих проблем настолько очевидна, что новая модель организационной деятельности в значительной степени обуславливает создание дальнейших направлений развития.
+            Несколько месяцев назад сломался мой телефон Samsung galaxy S4 zoom.
+            я его сдал в один из сервисных центров Уфы, где он благополучно пролежал около 3 месяцев (!),
+            после чего "мастер" посоветовал его выкинуть, ибо починить не представлялось возможным!
+            я уже собрался попрощаться со своим телефоном и тут мне посоветовали сервисный центр «Бигфикс",
+            сказали, что там ребята творят чудеса)) » вот сейчас я пишу отзыв со своего отремонтированного телефона,
+            который мне починил Иван. Хочу еще раз поблагодарить его и весь сервисный центр за оперативную и профессиональную работу!
           </p>
-        </div>
-        {{/repeat}}
+        </section>
+
+        <section>
+          <div class="testimonials__photo" style="background-image: url(images/testimonials/3.jpg);"></div>
+          <h3 class="testimonials__name">Гера Столицына</h3>
+          <p class="testimonials__opinion">
+            Ремонтировала телефон модели Android в сервисном центре «Бигфикс" в Башкирии «Лайфстайл центр». Замечательный результат, оперативно и эффективно исправляют практически любую поломку. Спасибо мастеру по ремонту еще раз, очень хорошая организация. Буду обращаться и впредь.
+          </p>
+        </section>
+
       </div>
     </div>
   </section>

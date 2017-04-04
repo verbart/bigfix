@@ -7,7 +7,7 @@ RewriteRule ^(([^/]+/)*[^.]+)$ /$1.html [L]
 RewriteCond %{HTTP_HOST} ^www.bigfix.biz
 RewriteRule (.*) http://bigfix.biz/$1 [R=301,L]
 
-RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+#RewriteCond %{HTTPS} off
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 
 DirectoryIndex phone-repair.html
