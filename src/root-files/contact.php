@@ -2,7 +2,7 @@
 $c = true;
 
 $project_name = "BIGFIX";
-$admin_email  = " bigfix1@yandex.ru";
+$admin_email  = "bigfix1@yandex.ru";
 $form_subject = "Новая заявка с сайта";
 
 $reply_to = $admin_email;
